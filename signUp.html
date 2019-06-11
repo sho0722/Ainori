@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>新しい旅人を登録</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">TOP</a>
+            <a href="signUp.html">旅人登録</a>
+            <a href="search.php">旅人検索</a>
+        </nav>
+        <p>あいのり　Asian Jurney</p>
+    </header>
+    <h1>新しい旅人を登録</h1>
+    <form action="check.php" method="POST">
+        ＊なまえ：<input type="text" name="name"><br>
+        ＊性別：
+        <input type="radio" name="gender" value="男" checked>男性
+        <input type="radio" name="gender" value="女">女性<br>
+        ＊年齢：<input type="number" name="age" min="18" max="80">歳<br>
+        血液型：
+        <select name="bloodType">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="O">O</option>
+            <option value="AB">AB</option>
+        </select><br>
+        職業：<input type="text" name="profession"><br>
+        出身地：<input type="text" name="birthplace"><br>
+        コメント：<textarea name="comment" cols="50" rows="1"></textarea><br>
+        <span style="color: #C71585">＊は必須項目です</span><br>
+        <input class="submit" type="submit" value="確認">
+    </form>
+</body>
+</html>
